@@ -26,7 +26,7 @@ export const Service = () => {
 
         const job = { title, description, comp, location };
 
-        const response = await fetch('http://localhost:3000/api/jobs/', {
+        const response = await fetch('https://task-bulls-backend.vercel.app/api/jobs/', {
             method: 'POST',
             body: JSON.stringify(job),
             headers: {

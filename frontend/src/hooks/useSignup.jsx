@@ -9,7 +9,7 @@ export const useSignup = () => {
     const signup = async (email, full_name, usf_id, phone_num, password) => {
         setIsLoading(true);
 
-        const response = await fetch("http://localhost:3000/api/user/signup", {
+        const response = await fetch("https://task-bulls-backend.vercel.app/user/signup", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

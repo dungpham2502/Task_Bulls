@@ -9,7 +9,7 @@ export const JobDetail = () => {
 
     useEffect(() => {
         const fetchUser = async () => {
-            const response = await fetch(`http://localhost:3000/api/user/${job.creator_id}`);
+            const response = await fetch(`https://task-bulls-backend.vercel.app/api/user/${job.creator_id}`);
             const json = await response.json();
 
             if (response.ok) {

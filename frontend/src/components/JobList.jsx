@@ -11,7 +11,7 @@ export const JobList = () => {
 
     useEffect(() => {
         const fetchJobs = async () => {
-            const response = await fetch("http://localhost:3000/api/jobs/");
+            const response = await fetch("https://task-bulls-backend.vercel.app/api/jobs/");
             const json = await response.json();
             
             if (response.ok) {

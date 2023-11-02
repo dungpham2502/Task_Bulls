@@ -5,12 +5,6 @@ import taskBull from "../assets/images/TaskBull.png"
 
 export const Signup = () => {
 
-    // const navigate = useNavigate();
-
-    // const handleSignup = () => {
-    //     navigate('/');
-    // }
-
     const [email, setEmail] = useState('');
     const [fullName, setFullName] = useState('');
     const [usfStudentId, setUsfStudentId] = useState(null);
@@ -23,7 +17,6 @@ export const Signup = () => {
         e.preventDefault();
 
         await signup(email, fullName, usfStudentId, phoneNumber, password);
-        // handleSignup();
     };
 
     return (
